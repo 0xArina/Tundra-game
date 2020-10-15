@@ -19,4 +19,9 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public void BackToP1()
+    {
+        SceneManager.LoadScene(1);
+    }
+
 }
