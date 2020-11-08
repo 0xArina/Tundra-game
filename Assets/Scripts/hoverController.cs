@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class onHoverShowZoom : MonoBehaviour
+public class hoverController : MonoBehaviour
 {
     public GameObject image;
 
@@ -12,9 +13,15 @@ public class onHoverShowZoom : MonoBehaviour
         image.SetActive(false);
     }
 
-    public void OnMouseEnter()
+    public void OnMouseEnter() 
     {
         image.SetActive(true);
+        Debug.Log("Ray hit something");
+    }
+
+    public void OnMouseDown()
+    {
+        SceneManager.LoadScene(7);
     }
 
     public void OnMouseExit()
