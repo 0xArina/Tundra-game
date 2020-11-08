@@ -44,6 +44,11 @@ public class lockController : MonoBehaviour
             unlocked = true;
             lockButton.SetActive(true);
         }
+        else
+        {
+            lockButton.SetActive(false);
+            unlocked = false;
+        }
     }
 
     public void OnMouseDown()
