@@ -50,6 +50,13 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(6);
     }
 
+    public void loadP2_Scene2()
+    {
+        //P2 Scene 2
+        SceneManager.LoadScene(7);
+    }
+
+
     // EXIT GAME
     public void exitGame()
     {
