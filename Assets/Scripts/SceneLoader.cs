@@ -5,23 +5,54 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    public void MainMenu()
+    {
+        // MAIN MENU
+        SceneManager.LoadScene(0);
 
+    }
 
     public void LoadGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
-    }
-
-    public void LoadMap()
-    {
-        //load the map scene
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-    public void BackToP1()
-    {
+        // CHOOSE YOUR PLAYER
         SceneManager.LoadScene(1);
+
     }
 
+    public void P1chosen()
+    {
+        // INSTRUCTIONS FOR P1
+        SceneManager.LoadScene(2);
+    }
+
+    public void P2Chosen()
+    {
+        // INSTRUCTIONS FOR P2
+        SceneManager.LoadScene(3);
+    }
+
+    public void Options()
+    {
+        // OPTIONS
+        SceneManager.LoadScene(4);
+    }
+
+
+    public void LoadP1()
+    {
+        // P1 ENVIRONMENT
+        SceneManager.LoadScene(5);
+    }
+
+    public void LoadP2()
+    {
+        // P2 ENVIRONMENT
+        SceneManager.LoadScene(6);
+    }
+
+    // EXIT GAME
+    public void exitGame()
+    {
+        Application.Quit();
+    }
 }
