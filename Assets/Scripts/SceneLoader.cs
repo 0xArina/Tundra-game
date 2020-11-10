@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -50,6 +51,11 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(6);
     }
 
+    public void LoadP1_puzzle()
+    {
+        // P2 ENVIRONMENT
+        SceneManager.LoadScene(8);
+    }
 
     // EXIT GAME
     public void exitGame()

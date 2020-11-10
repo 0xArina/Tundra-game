@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class Tower_enlarged : MonoBehaviour
 {
     public GameObject imageTower;
+    
 
     public void Start()
     {
