@@ -34,5 +34,6 @@ public class arrowsManagement : MonoBehaviour
     {
         bgLeft.SetActive(true);
         bgRight.SetActive(false);
+        collider1.SetActive(true);
     }
 }

@@ -55,11 +55,13 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(7);
     }
-    public void LoadP1_puzzle()
+   
+    /*public void LoadP1_puzzle()
     {
-        // P2 ENVIRONMENT
-        SceneManager.LoadScene(8);
+        // P1 puzzle
+        //SceneManager.LoadScene(8);
     }
+    */
 
     // EXIT GAME
     public void exitGame()
