@@ -6,6 +6,7 @@ public class PanelManagement : MonoBehaviour
 {
 
     public GameObject puzzleBG;
+    public GameObject noSnowPzl;
 
     // Start is called before the first frame update
     void Start()
@@ -22,10 +23,16 @@ public class PanelManagement : MonoBehaviour
     public void showPuzzle()
     {
         puzzleBG.SetActive(true);
+        noSnowPzl.SetActive(false);
     }
 
     public void exitPuzzle()
     {
         puzzleBG.SetActive(false);
+    }
+
+    public void exitNoSnowPuzzle()
+    {
+        noSnowPzl.SetActive(false);
     }
 }
