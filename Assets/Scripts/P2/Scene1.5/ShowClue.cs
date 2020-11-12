@@ -9,24 +9,9 @@ public class ShowClue : MonoBehaviour
 
     public GameObject clue;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        clue.SetActive(false);
-    }
-
     public void OnMouseDown()
     {
         SceneManager.LoadScene(10);
     }
 
-    public void OnMouseEnter()
-    {
-        clue.SetActive(true);
-    }
-
-    public void OnMouseExit()
-    {
-        clue.SetActive(false);
-    }
 }
