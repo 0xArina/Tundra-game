@@ -61,7 +61,12 @@ public class SceneLoader : MonoBehaviour
     
         SceneManager.LoadScene(8);
     }
-    
+
+    public void LoadP2Scene_ClueRoom()
+    {
+
+        SceneManager.LoadScene(9);
+    }
 
     public void LoadP2Scene_1_5()
     {

@@ -206,7 +206,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 591873687}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadP2
+        m_MethodName: LoadP2Scene_ClueRoom
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

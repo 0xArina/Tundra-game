@@ -12,7 +12,7 @@ public class ShowClue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        clue.SetActive(true);
+        clue.SetActive(false);
     }
 
     public void OnMouseDown()
