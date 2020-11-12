@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class Tower_enlarged : MonoBehaviour
 {
     public GameObject imageTower;
+    public GameObject puzzleBG;
     
 
     public void Start()
@@ -22,7 +23,8 @@ public class Tower_enlarged : MonoBehaviour
 
     public void OnMouseDown()
     {
-        SceneManager.LoadScene(8);
+        //SceneManager.LoadScene(8);
+        puzzleBG.SetActive(true);
     }
 
     public void OnMouseExit()

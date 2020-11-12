@@ -1752,19 +1752,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1635486923}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 573264393}
-        m_TargetAssemblyTypeName: PanelManagement, Assembly-CSharp
-        m_MethodName: showPuzzle
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1635486923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2177,6 +2165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageTower: {fileID: 1635486920}
+  puzzleBG: {fileID: 979608468}
 --- !u!61 &2082093069
 BoxCollider2D:
   m_ObjectHideFlags: 0
