@@ -7,12 +7,15 @@ public class PanelManagement : MonoBehaviour
 
     public GameObject puzzleBG;
     public GameObject noSnowPzl;
+    public GameObject shelf;
 
     // Start is called before the first frame update
     void Start()
     {
+        // scene starts with bg under these 2
         puzzleBG.SetActive(false);
-        noSnowPzl.SetActive(false);
+       noSnowPzl.SetActive(false);
+        shelf.SetActive(true);
     }
 
     // Update is called once per frame
@@ -21,19 +24,17 @@ public class PanelManagement : MonoBehaviour
         
     }
 
-    public void showPuzzle()
-    {
-        puzzleBG.SetActive(true);
-        noSnowPzl.SetActive(false);
-    }
 
     public void exitPuzzle()
     {
         puzzleBG.SetActive(false);
+        //noSnowPzl.SetActive(false);
+        shelf.SetActive(true);
     }
 
     public void exitNoSnowPuzzle()
     {
         noSnowPzl.SetActive(false);
+        shelf.SetActive(true);
     }
 }
