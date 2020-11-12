@@ -56,7 +56,7 @@ public class lockController : MonoBehaviour
         if(unlocked == true)
         {
             //Reload scene for now
-            SceneManager.LoadScene(9);
+            SceneManager.LoadScene(8);
         }
     }
 }
