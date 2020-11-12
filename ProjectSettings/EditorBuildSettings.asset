@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/P2_scenes/P2_Scene03.unity
     guid: 8816d044ae5ae3a4e986ee6ce3fdb803
+  - enabled: 1
+    path: Assets/Scenes/P2_scenes/P2_Scene01.5.unity
+    guid: 93119317c5e539045991b0c19c39f021
+  - enabled: 1
+    path: Assets/Scenes/P2_scenes/P2_ClueScene.unity
+    guid: 123dff8b89856924786c94e34adfc799
   m_configObjects: {}
