@@ -5,6 +5,11 @@ using UnityEngine.EventSystems;
 
 public class DropAndClean : MonoBehaviour, IDropHandler
 {
+
+    public GameObject puzzleNoSnow;
+    public GameObject puzzleSnow;
+    public GameObject shelf;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +26,11 @@ public class DropAndClean : MonoBehaviour, IDropHandler
     {
         if(eventData.pointerDrag != null)
         {
-           // eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
-           // eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().position;
+            eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
+            // eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().position;
+            puzzleNoSnow.SetActive(true);
+            puzzleSnow.SetActive(false);
+            shelf.SetActive(false);
         }
     }
 }

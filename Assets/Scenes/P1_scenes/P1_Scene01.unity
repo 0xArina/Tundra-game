@@ -839,6 +839,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puzzleBG: {fileID: 979608468}
   noSnowPzl: {fileID: 920170143}
+  shelf: {fileID: 1543162746}
 --- !u!4 &573264394
 Transform:
   m_ObjectHideFlags: 0
@@ -937,7 +938,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 573264393}
         m_TargetAssemblyTypeName: PanelManagement, Assembly-CSharp
-        m_MethodName: exitPuzzle
+        m_MethodName: exitNoSnowPuzzle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1256,6 +1257,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c2a44638eb3870449c0ef57355b0cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleNoSnow: {fileID: 920170143}
+  puzzleSnow: {fileID: 979608468}
+  shelf: {fileID: 1543162746}
 --- !u!1 &1020795312
 GameObject:
   m_ObjectHideFlags: 0
@@ -2537,6 +2541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageTower: {fileID: 1635486920}
   puzzleBG: {fileID: 979608468}
+  puzzleNoSnow: {fileID: 920170143}
 --- !u!61 &2082093069
 BoxCollider2D:
   m_ObjectHideFlags: 0

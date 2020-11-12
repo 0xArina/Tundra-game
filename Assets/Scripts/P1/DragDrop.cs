@@ -11,7 +11,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
 
-    Vector3 startPosition;
+    //Vector3 startPosition;
 
     private void Awake()
     {
@@ -21,7 +21,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void Start()
     {
-        startPosition = rectTransform.transform.position;
+       // startPosition = rectTransform.transform.position;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -52,8 +52,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     {
         if (eventData.pointerDrag != null)
         {
-            // eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
-            eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = startPosition;
+             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
+           // eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = startPosition;
         }
     }
 
