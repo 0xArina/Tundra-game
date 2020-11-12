@@ -13,7 +13,7 @@ public class lockController : MonoBehaviour
     private Image third;
     private Image fourth;
 
-    public GameObject lockButton;
+    //public GameObject lockButton;
 
     public Sprite zero;
     public Sprite two;
@@ -30,10 +30,7 @@ public class lockController : MonoBehaviour
         third = GameObject.Find("thirdNum").GetComponent<Image>();
         fourth = GameObject.Find("fourthNum").GetComponent<Image>();
 
-        //lockButton = GameObject.Find("lockButton").GetComponent<Image>();
-
-
-        lockButton.SetActive(false);
+        //lockButton = GameObject.Find("lockButton").GetComponent<Image
     }
 
     // Update is called once per frame
@@ -41,22 +38,18 @@ public class lockController : MonoBehaviour
     {
         if(first.sprite == nine && second.sprite == four && third.sprite == two && fourth.sprite == zero)
         {
-            unlocked = true;
-            lockButton.SetActive(true);
-        }
-        else
-        {
-            lockButton.SetActive(false);
-            unlocked = false;
-        }
-    }
-
-    public void OnMouseDown()
-    {
-        if(unlocked == true)
-        {
-            //Reload scene for now
+            Debug.Log("Clicked and unlocked");
             SceneManager.LoadScene(8);
         }
     }
+
+    //public void OnMouseDown()
+    //{
+    //    Debug.Log("Clicked");
+    //    if(unlocked == true)
+    //    {
+    //        Debug.Log("Clicked and unlocked");
+    //        SceneManager.LoadScene(8);
+    //    }
+    //}
 }
