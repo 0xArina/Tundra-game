@@ -9,6 +9,7 @@ public class DropAndClean : MonoBehaviour, IDropHandler
     public GameObject puzzleNoSnow;
     public GameObject puzzleSnow;
     public GameObject shelf;
+    public GameObject collider1;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,9 @@ public class DropAndClean : MonoBehaviour, IDropHandler
             // eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().position;
             puzzleNoSnow.SetActive(true);
             puzzleSnow.SetActive(false);
+           
+           collider1.SetActive(false);
+            
             shelf.SetActive(false);
         }
     }
