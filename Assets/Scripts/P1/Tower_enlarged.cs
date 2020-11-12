@@ -9,7 +9,7 @@ public class Tower_enlarged : MonoBehaviour
     public GameObject imageTower;
     public GameObject puzzleBG;
     public GameObject puzzleNoSnow;
-    public GameObject collider1;
+   
 
     
 
