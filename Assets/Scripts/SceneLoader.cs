@@ -58,14 +58,14 @@ public class SceneLoader : MonoBehaviour
    
     public void LoadP1_puzzle()
     {
-        // P1 ENVIRONMENT
+    
         SceneManager.LoadScene(8);
     }
     
 
     public void LoadP2Scene_1_5()
     {
-        // P2 ENVIRONMENT 2
+
         SceneManager.LoadScene(10);
     }
 

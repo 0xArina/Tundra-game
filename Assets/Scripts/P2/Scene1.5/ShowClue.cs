@@ -12,12 +12,12 @@ public class ShowClue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        clue.SetActive(false);
+        clue.SetActive(true);
     }
 
     public void OnMouseDown()
     {
-        SceneManager.LoadScene(11);
+        SceneManager.LoadScene(10);
     }
 
     public void OnMouseEnter()

@@ -7,6 +7,6 @@ public class ClueSceneButton : MonoBehaviour
 {
     private void OnMouseDown()
     {
-        SceneManager.LoadScene(10);
+        SceneManager.LoadScene(9);
     }
 }

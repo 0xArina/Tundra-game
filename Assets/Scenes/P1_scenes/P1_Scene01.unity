@@ -203,19 +203,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 26112433}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 417889465}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &26112433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -850,7 +838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleBG: {fileID: 979608468}
-  noSnowPzl: {fileID: 0}
+  noSnowPzl: {fileID: 920170143}
 --- !u!4 &573264394
 Transform:
   m_ObjectHideFlags: 0
@@ -1092,8 +1080,8 @@ RectTransform:
   - {fileID: 1020795313}
   - {fileID: 462237685}
   - {fileID: 1272247971}
-  - {fileID: 979608469}
   - {fileID: 920170144}
+  - {fileID: 979608469}
   - {fileID: 1543162747}
   m_Father: {fileID: 46856743}
   m_RootOrder: 0
@@ -1134,7 +1122,7 @@ RectTransform:
   m_Children:
   - {fileID: 694305847}
   m_Father: {fileID: 743666166}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1190,6 +1178,7 @@ GameObject:
   - component: {fileID: 979608469}
   - component: {fileID: 979608471}
   - component: {fileID: 979608470}
+  - component: {fileID: 979608472}
   m_Layer: 5
   m_Name: PuzzleWithSnow
   m_TagString: Untagged
@@ -1210,7 +1199,7 @@ RectTransform:
   m_Children:
   - {fileID: 277308108}
   m_Father: {fileID: 743666166}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1255,6 +1244,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979608468}
   m_CullTransparentMesh: 0
+--- !u!114 &979608472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979608468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c2a44638eb3870449c0ef57355b0cdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1020795312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1398,6 +1399,8 @@ GameObject:
   - component: {fileID: 1108189858}
   - component: {fileID: 1108189860}
   - component: {fileID: 1108189859}
+  - component: {fileID: 1108189861}
+  - component: {fileID: 1108189862}
   m_Layer: 5
   m_Name: BroomOnShelf
   m_TagString: Untagged
@@ -1462,6 +1465,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108189857}
   m_CullTransparentMesh: 0
+--- !u!114 &1108189861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108189857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d28f5d90b0afe26498ab3a23755157a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!225 &1108189862
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108189857}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1217033891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1817,7 +1844,7 @@ GameObject:
   - component: {fileID: 1543162749}
   - component: {fileID: 1543162748}
   m_Layer: 5
-  m_Name: Bottom_dark_line(shelf)
+  m_Name: Shelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

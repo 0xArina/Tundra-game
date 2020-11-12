@@ -12,6 +12,7 @@ public class PanelManagement : MonoBehaviour
     void Start()
     {
         puzzleBG.SetActive(false);
+        noSnowPzl.SetActive(false);
     }
 
     // Update is called once per frame
