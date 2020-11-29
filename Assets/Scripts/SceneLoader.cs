@@ -74,6 +74,17 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(10);
     }
 
+    //KEY ACTIVE SCENES FOR P2
+
+    public void LoadP2_Scene1_KEY()
+    {
+        SceneManager.LoadScene(11);
+    }
+    public void LoadP2_CompletedRunePuzzle_KEY()
+    {
+        SceneManager.LoadScene(12);
+    }
+
     // EXIT GAME
     public void exitGame()
     {

@@ -22,6 +22,9 @@ public class puzzle2Controller : MonoBehaviour
 
     public GameObject passCode;
 
+    public GameObject backButtonStart;
+    public GameObject backButtonEnd;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +34,7 @@ public class puzzle2Controller : MonoBehaviour
         fourth = GameObject.Find("fourthCode").GetComponent<Image>();
         fifth = GameObject.Find("fifthCode").GetComponent<Image>();
 
+        backButtonEnd.SetActive(false);
         
     }
 
@@ -40,11 +44,14 @@ public class puzzle2Controller : MonoBehaviour
         if (first.sprite == f && second.sprite == y && third.sprite == b && fourth.sprite == m && fifth.sprite == p)
         {
             passCode.SetActive(true);
+            backButtonStart.SetActive(false);
+            backButtonEnd.SetActive(true);
         }
         else
         {
             passCode.SetActive(false);
-        }
+            backButtonStart.SetActive(true);
+        };
     }
 }
 
