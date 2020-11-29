@@ -14,7 +14,7 @@ public class PanelManagement : MonoBehaviour
     {
         // scene starts with bg under these 2
         puzzleBG.SetActive(false);
-       noSnowPzl.SetActive(false);
+        noSnowPzl.SetActive(false);
         shelf.SetActive(true);
     }
 

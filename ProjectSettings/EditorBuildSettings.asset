@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/P2_scenes/ScenesWithKey/KeyScene_01.unity
     guid: 484846a57f0dffb41a70bf53d12b2c21
+  - enabled: 1
+    path: Assets/Scenes/P2_scenes/ScenesWithKey/CompletedRuneScene.unity
+    guid: 4c2d57fe28eb0694d84fa035ec704ba2
   m_configObjects: {}
