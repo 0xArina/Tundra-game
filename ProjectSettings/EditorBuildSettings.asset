@@ -54,6 +54,9 @@ EditorBuildSettings:
     path: Assets/Scenes/P2_scenes/ScenesWithKey/SecondKeyScenes/BookshelfScene.unity
     guid: 99eb529cd0dc47f478e0b9afea7a6e56
   - enabled: 1
-    path: Assets/Scenes/P2_scenes/ScenesWithKey/SecondKeyScenes/SafeScene.unity
+    path: Assets/Scenes/P2_scenes/ScenesWithKey/SecondKeyScenes/OpenSafeScene.unity
     guid: 5d88388c3c15f7a4195ae5d53cc3b192
+  - enabled: 1
+    path: Assets/Scenes/P2_scenes/ScenesWithKey/SecondKeyScenes/SafePuzzle.unity
+    guid: d1fab5198a674ce44807a008d0bd243b
   m_configObjects: {}
