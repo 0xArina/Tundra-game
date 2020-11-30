@@ -24,6 +24,6 @@ public class EnlargeSafe : MonoBehaviour
 
     private void OnMouseDown()
     {
-        //SceneManager.LoadScene()
+        SceneManager.LoadScene(16);
     }
 }

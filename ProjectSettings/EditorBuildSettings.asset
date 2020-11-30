@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/P2_scenes/ScenesWithKey/SecondKeyScenes/SceneBehindDoor.unity
     guid: 6106c8f8ddfe6de48847277d12e0b54c
+  - enabled: 1
+    path: Assets/Scenes/P2_scenes/ScenesWithKey/SecondKeyScenes/BookshelfScene.unity
+    guid: 99eb529cd0dc47f478e0b9afea7a6e56
+  - enabled: 1
+    path: Assets/Scenes/P2_scenes/ScenesWithKey/SecondKeyScenes/SafeScene.unity
+    guid: 5d88388c3c15f7a4195ae5d53cc3b192
   m_configObjects: {}

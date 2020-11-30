@@ -25,6 +25,6 @@ public class EnlargeBookshelf : MonoBehaviour
 
     private void OnMouseDown()
     {
-        //SceneManager.LoadScene()
+        SceneManager.LoadScene(15);
     }
 }
