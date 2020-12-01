@@ -59,4 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/P2_scenes/ScenesWithKey/SecondKeyScenes/SafePuzzle.unity
     guid: d1fab5198a674ce44807a008d0bd243b
+  - enabled: 1
+    path: Assets/Scenes/P2_scenes/ScenesWithKey/SecondKeyScenes/VialScene.unity
+    guid: e1f55d5f971f79a429680531586d3eca
   m_configObjects: {}
