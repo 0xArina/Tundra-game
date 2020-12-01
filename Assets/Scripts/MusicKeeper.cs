@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
 public class MusicKeeper : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Awake()
+    public void Awake()
     {
         GameObject[] objs = GameObject.FindGameObjectsWithTag("Music");
 		if (objs.Length > 1)
