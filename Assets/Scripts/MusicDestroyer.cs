@@ -9,7 +9,7 @@ public class MusicDestroyer : MonoBehaviour
     public void KillSound()
     {
         GameObject[] objs = GameObject.FindGameObjectsWithTag("Music");
-		if (objs.Length > 0)
-			Destroy(this.gameObject);
+		foreach(GameObject track in objs)
+			GameObject.Destroy(track);
     }
 }
