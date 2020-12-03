@@ -8,6 +8,7 @@ public class PanelManagement : MonoBehaviour
     public GameObject shelf;
     public GameObject questionPanel;
     public GameObject bookP1;
+    public GameObject litTowerPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,9 @@ public class PanelManagement : MonoBehaviour
 
         // ? / instuctions / hints
         questionPanel.SetActive(false);
+
+        // lit Tower panel
+        litTowerPanel.SetActive(false);
     }
 
     public void exitPuzzle()
@@ -60,5 +64,11 @@ public class PanelManagement : MonoBehaviour
     public void CloseQuestion()
     {
         questionPanel.SetActive(false);
+    }
+
+    public void backToLit()
+    {
+        noSnowPzl.SetActive(false);
+        litTowerPanel.SetActive(true);
     }
 }

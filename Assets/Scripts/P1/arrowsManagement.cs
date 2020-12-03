@@ -19,14 +19,15 @@ public class arrowsManagement : MonoBehaviour
       
     }
 
+    // panel with broom
     public void ShowNewBG()
     {
         bgRight.SetActive(true);
         collider1.SetActive(false);
 
-        Debug.Log("Ray hit arrow");
     }
 
+    // panel with tower
     public void ShowFirstBG()
     {
         bgLeft.SetActive(true);
