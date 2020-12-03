@@ -6,6 +6,7 @@ public class PanelManagement : MonoBehaviour
     public GameObject puzzleBG;
     public GameObject noSnowPzl;
     public GameObject shelf;
+    public GameObject questionPanel;
     public GameObject bookP1;
 
     // Start is called before the first frame update
@@ -20,6 +21,9 @@ public class PanelManagement : MonoBehaviour
 
         // memory book Page 1
         bookP1.SetActive(false);
+
+        // ? / instuctions / hints
+        questionPanel.SetActive(false);
     }
 
     public void exitPuzzle()
@@ -44,5 +48,17 @@ public class PanelManagement : MonoBehaviour
     public void closeBookP1()
     {
         bookP1.SetActive(false);
+    }
+
+    // open hints
+    public void OpenQuestion()
+    {
+        questionPanel.SetActive(true);
+    }
+
+    // close hints
+    public void CloseQuestion()
+    {
+        questionPanel.SetActive(false);
     }
 }
