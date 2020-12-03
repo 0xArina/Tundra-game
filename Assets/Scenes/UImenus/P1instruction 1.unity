@@ -557,9 +557,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Make sure your friend
+  m_text: 'Make sure your team
 
-    plays as Player 2'
+    member is Player 2'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -932,8 +932,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 781, y: -445}
-  m_SizeDelta: {x: 199.46332, y: 49.332123}
+  m_AnchoredPosition: {x: 797, y: -444.7}
+  m_SizeDelta: {x: 177.10214, y: 67.95575}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1760296397
 MonoBehaviour:
@@ -1064,8 +1064,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -753, y: -445}
-  m_SizeDelta: {x: 199.46332, y: 49.332123}
+  m_AnchoredPosition: {x: -806.3, y: -444.7}
+  m_SizeDelta: {x: 177.10095, y: 67.959404}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1911258534
 MonoBehaviour:
