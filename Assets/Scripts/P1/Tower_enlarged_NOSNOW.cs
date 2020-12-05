@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Tower_enlarged : MonoBehaviour
+public class Tower_enlarged_NOSNOW : MonoBehaviour
 {
     public GameObject imageTower;
     public GameObject puzzleBG;
@@ -26,16 +26,15 @@ public class Tower_enlarged : MonoBehaviour
 
     public void OnMouseDown()
     {
-        // OPEN PUZZLE WITH SNOW WHEN TOWER IS PRESSED
-        
-        puzzleBG.SetActive(true);
-        
+        // OPEN PUZZLE WITH NO SNOW WHEN TOWER IS PRESSED
+
+        puzzleNoSnow.SetActive(true);
+        puzzleBG.SetActive(false);
 
     }
 
     public void OnMouseExit()
     {
-
         imageTower.SetActive(false);
     }
 }
