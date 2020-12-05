@@ -7,7 +7,9 @@ public class P1_Quiz : MonoBehaviour
 
 {
 
-   public GameObject backBtn;
+    public GameObject backBtn;
+    public GameObject backToUnlit;
+    
 
     // tower quiz buttons
     public GameObject b12pm;
@@ -40,6 +42,7 @@ public class P1_Quiz : MonoBehaviour
         b5pmLit.SetActive(false);
         b2pmLit.SetActive(false);
 
+        // !!!!!!!!! HIDE BACK BUTTON TO LIT TOWER !!!!!!!!!!
         backBtn.SetActive(false);
 
         // btn @ 5pm lights up first
@@ -191,6 +194,8 @@ public class P1_Quiz : MonoBehaviour
         if (b12 && b5 && b10 && b2 && b7)
         {
             b7pmLit.SetActive(true);
+            // !!!!!!!!! HIDE BACK BUTTON TO LIT TOWER !!!!!!!!!!
+            backToUnlit.SetActive(false);
             backBtn.SetActive(true);
         }
         else
