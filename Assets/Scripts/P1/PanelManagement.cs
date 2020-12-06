@@ -13,13 +13,13 @@ public class PanelManagement : MonoBehaviour
     public GameObject bgRight;
     public GameObject bgLeft;
 
-    /*********** PUZZLE  ***********/
+    /*********** SHELF ***********/
     public GameObject shelf;
 
-    /*********** PUZZLE  ***********/
+    /*********** HINTS  ***********/
     public GameObject questionPanel;
 
-    /*********** PUZZLE  ***********/
+    /*********** BOOK  ***********/
     public GameObject bookP1;
 
 
