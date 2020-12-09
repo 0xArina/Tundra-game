@@ -25,7 +25,7 @@ public class CheckKeyCollected : MonoBehaviour
 
     private void Start()
     {
-        background = GameObject.Find("P2_Background_vialScene").GetComponent<Image>();
+        
     }
 
     // Update is called once per frame
@@ -48,7 +48,7 @@ public class CheckKeyCollected : MonoBehaviour
             vialPurple.SetActive(true);
             vialRed.SetActive(true);
             vialYellow.SetActive(true);
-            background.sprite = newBackground;
+
         }
         else
         {
@@ -58,7 +58,7 @@ public class CheckKeyCollected : MonoBehaviour
             vialPurple.SetActive(false);
             vialRed.SetActive(false);
             vialYellow.SetActive(false);
-            background.sprite = oldBackground;
+
         }
     }
 }

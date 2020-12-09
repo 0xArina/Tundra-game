@@ -35,10 +35,7 @@ public class ChangeInputs : MonoBehaviour
     void Update()
     {
 
-        if (input1.sprite == seven && input2.sprite == four && input3.sprite == nine && input4.sprite == one)
-        {
-            //SceneManager.LoadScene()
-        }
+
         if(counter == 0)
         {
             input1.sprite = blank;

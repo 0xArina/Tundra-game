@@ -9,7 +9,7 @@ public class P1_Quiz : MonoBehaviour
 
     public GameObject backBtn;
     public GameObject backToUnlit;
-    
+
 
     // tower quiz buttons
     public GameObject b12pm;
@@ -25,7 +25,6 @@ public class P1_Quiz : MonoBehaviour
     public GameObject b5pmLit;
     public GameObject b2pmLit;
 
-    // booleans for if statements to switch btw lit/unlit states
     bool b12 = false;
     bool b10 = false;
     bool b7 = false;
@@ -35,6 +34,7 @@ public class P1_Quiz : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         // hide all lit buttons
         b12pmLit.SetActive(false);
         b10pmLit.SetActive(false);
@@ -53,14 +53,87 @@ public class P1_Quiz : MonoBehaviour
 
     }
 
+    public void deactivateRunes()
+    {
+        b5 = false;
+        b5pmLit.SetActive(false);
+        b12 = false;
+        b12pmLit.SetActive(false);
+        b10 = false;
+        b10pmLit.SetActive(false);
+        b2 = false;
+        b2pmLit.SetActive(false);
+        b7 = false;
+        b7pmLit.SetActive(false);
+    }
+
     // Update is called once per frame
     void Update()
     {
+
+        if(b5 == false)
+        {
+            b5pmLit.SetActive(false);
+        }
+
+        Button btn12 = b12pm.GetComponent<Button>();
+        Button btn10 = b10pm.GetComponent<Button>();
+        Button btn2 = b2pm.GetComponent<Button>();
+        Button btn7 = b7pm.GetComponent<Button>();
+
+        btn12.onClick.AddListener(click_b12pm);
+        btn10.onClick.AddListener(click_b10pm);
+        btn2.onClick.AddListener(click_b2pm);
+        btn7.onClick.AddListener(click_b7pm);
+
+
         if (b5)
         {
             b5pmLit.SetActive(true);
-        } else 
-            if (b10 || b2 || b7 || b5)
+            if (b12)
+            {
+                b12pmLit.SetActive(true);
+                if (b10)
+                {
+                    b10pmLit.SetActive(true);
+                    if (b2)
+                    {
+                        b2pmLit.SetActive(true);
+                        if (b7)
+                        {
+                            b7pmLit.SetActive(true);
+                            //Set middle button as active!
+                        }
+                    }
+                    else if (!b5 && !b12 && !b10 && !b2)
+                    {
+                        b5 = false;
+                        b5pmLit.SetActive(false);
+                        b12 = false;
+                        b12pmLit.SetActive(false);
+                        b10 = false;
+                        b10pmLit.SetActive(false);
+                        b2 = false;
+                        b2pmLit.SetActive(false);
+                        b7 = false;
+                        b7pmLit.SetActive(false);
+                    }
+                }
+                else if (!b5 && !b12 && !b10)
+                {
+                    b5 = false;
+                    b5pmLit.SetActive(false);
+                    b12 = false;
+                    b12pmLit.SetActive(false);
+                    b10 = false;
+                    b10pmLit.SetActive(false);
+                    b2 = false;
+                    b2pmLit.SetActive(false);
+                    b7 = false;
+                    b7pmLit.SetActive(false);
+                }
+            }
+            else if (!b5 && !b12)
             {
                 b5 = false;
                 b5pmLit.SetActive(false);
@@ -73,32 +146,37 @@ public class P1_Quiz : MonoBehaviour
                 b7 = false;
                 b7pmLit.SetActive(false);
             }
-        
+        }
+        else if (!b5)
+        {
+            b5 = false;
+            b5pmLit.SetActive(false);
+            b12 = false;
+            b12pmLit.SetActive(false);
+            b10 = false;
+            b10pmLit.SetActive(false);
+            b2 = false;
+            b2pmLit.SetActive(false);
+            b7 = false;
+            b7pmLit.SetActive(false);
+        }
 
-        Button btn12 = b12pm.GetComponent<Button>();
-        Button btn10 = b10pm.GetComponent<Button>();
-        Button btn2 = b2pm.GetComponent<Button>();
-        Button btn7 = b7pm.GetComponent<Button>();
-
-        btn12.onClick.AddListener(click_b12pm);
-        btn10.onClick.AddListener(click_b10pm);
-        btn2.onClick.AddListener(click_b2pm);
-        btn7.onClick.AddListener(click_b7pm);
+        // Sequence = b5, b12, b10, b2, b7
 
     }
 
     void click_b5pm()
     {
+        Debug.Log("b5 clicked");
         b5 = true;
-
-        
+        Debug.Log(b5);
     }
 
     void click_b12pm()
     {
         b12 = true;
 
-        checkButtonOrder1();
+        //checkButtonOrder1();
 
     }
 
@@ -106,111 +184,111 @@ public class P1_Quiz : MonoBehaviour
     {
         b10 = true;
 
-        checkButtonOrder2();
+        //checkButtonOrder2();
     }
 
     void click_b2pm()
     {
         b2 = true;
 
-        checkButtonOrder3();
+        //checkButtonOrder3();
     }
 
     void click_b7pm()
     {
         b7 = true;
 
-        checkButtonOrder4();
+        //checkButtonOrder4();
     }
 
-    void checkButtonOrder1()
-    {
-        if (b12 && b5)
-        {
-            b12pmLit.SetActive(true);
+    //void checkButtonOrder1()
+    //{
+    //    if (b12 && b5)
+    //    {
+    //        b12pmLit.SetActive(true);
 
-        }
-        else if (b10 || b2 || b7)
-        {
-                b5 = false;
-                b5pmLit.SetActive(false);
-                b12 = false;
-                b12pmLit.SetActive(false);
-                b10 = false;
-            b10pmLit.SetActive(false);
-            b2 = false;
-            b2pmLit.SetActive(false);
-            b7 = false;
-            b7pmLit.SetActive(false);
-        }
+    //    }
+    //    else if (b10 || b2 || b7)
+    //    {
+    //            b5 = false;
+    //            b5pmLit.SetActive(false);
+    //            b12 = false;
+    //            b12pmLit.SetActive(false);
+    //            b10 = false;
+    //        b10pmLit.SetActive(false);
+    //        b2 = false;
+    //        b2pmLit.SetActive(false);
+    //        b7 = false;
+    //        b7pmLit.SetActive(false);
+    //    }
         
-    }
+    //}
 
-    void checkButtonOrder2()
-    {
-        if (b12 && b5 && b10)
-        {
-            b10pmLit.SetActive(true);
-        }
-        else if(b2 || b7)
-        {
-            b5 = false;
-            b5pmLit.SetActive(false);
-            b12 = false;
-            b12pmLit.SetActive(false);
-            b10 = false;
-            b10pmLit.SetActive(false);
-            b2 = false;
-            b2pmLit.SetActive(false);
-            b7 = false;
-            b7pmLit.SetActive(false);
-        }
-    }
+    //void checkButtonOrder2()
+    //{
+    //    if (b12 && b5 && b10)
+    //    {
+    //        b10pmLit.SetActive(true);
+    //    }
+    //    else if(b2 || b7)
+    //    {
+    //        b5 = false;
+    //        b5pmLit.SetActive(false);
+    //        b12 = false;
+    //        b12pmLit.SetActive(false);
+    //        b10 = false;
+    //        b10pmLit.SetActive(false);
+    //        b2 = false;
+    //        b2pmLit.SetActive(false);
+    //        b7 = false;
+    //        b7pmLit.SetActive(false);
+    //    }
+    //}
 
-    void checkButtonOrder3()
-    {
-        if (b12 && b5 && b10 && b2)
-        {
-            b2pmLit.SetActive(true);
-        }
-        else if (b7)
-        {
-            b5 = false;
-            b5pmLit.SetActive(false);
-            b12 = false;
-            b12pmLit.SetActive(false);
-            b10 = false;
-            b10pmLit.SetActive(false);
-            b2 = false;
-            b2pmLit.SetActive(false);
-            b7 = false;
-            b7pmLit.SetActive(false);
+    //void checkButtonOrder3()
+    //{
+    //    if (b12 && b5 && b10 && b2)
+    //    {
+    //        b2pmLit.SetActive(true);
+    //    }
+    //    else if (b7)
+    //    {
+    //        b5 = false;
+    //        b5pmLit.SetActive(false);
+    //        b12 = false;
+    //        b12pmLit.SetActive(false);
+    //        b10 = false;
+    //        b10pmLit.SetActive(false);
+    //        b2 = false;
+    //        b2pmLit.SetActive(false);
+    //        b7 = false;
+    //        b7pmLit.SetActive(false);
 
-        }
-    }
+    //    }
+    //}
 
-    void checkButtonOrder4()
-    {
-        if (b12 && b5 && b10 && b2 && b7)
-        {
-            b7pmLit.SetActive(true);
-            // !!!!!!!!! HIDE BACK BUTTON TO LIT TOWER !!!!!!!!!!
-            backToUnlit.SetActive(false);
-            backBtn.SetActive(true);
-        }
-        else
-        {
-            b5 = false;
-            b5pmLit.SetActive(false);
-            b12 = false;
-            b12pmLit.SetActive(false);
-            b10 = false;
-            b10pmLit.SetActive(false);
-            b2 = false;
-            b2pmLit.SetActive(false);
-            b7 = false;
-            b7pmLit.SetActive(false);
-        }
-    }
+    //void checkButtonOrder4()
+    //{
+    //    if (b12 && b5 && b10 && b2 && b7)
+    //    {
+    //        b7pmLit.SetActive(true);
+    //        // !!!!!!!!! HIDE BACK BUTTON TO LIT TOWER !!!!!!!!!!
+    //        backToUnlit.SetActive(false);
+    //        backBtn.SetActive(true);
+    //    }
+    //    else
+    //    {
+    //        b5 = false;
+    //        b5pmLit.SetActive(false);
+    //        b12 = false;
+    //        b12pmLit.SetActive(false);
+    //        b10 = false;
+    //        b10pmLit.SetActive(false);
+    //        b2 = false;
+    //        b2pmLit.SetActive(false);
+    //        b7 = false;
+    //        b7pmLit.SetActive(false);
+    //    }
+    //}
 
 }
