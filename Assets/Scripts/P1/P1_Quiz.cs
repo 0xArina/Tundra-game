@@ -176,7 +176,7 @@ public class P1_Quiz : MonoBehaviour
     {
         b12 = true;
 
-        //checkButtonOrder1();
+        checkButtonOrder1();
 
     }
 
@@ -184,111 +184,111 @@ public class P1_Quiz : MonoBehaviour
     {
         b10 = true;
 
-        //checkButtonOrder2();
+        checkButtonOrder2();
     }
 
     void click_b2pm()
     {
         b2 = true;
 
-        //checkButtonOrder3();
+        checkButtonOrder3();
     }
 
     void click_b7pm()
     {
         b7 = true;
 
-        //checkButtonOrder4();
+        checkButtonOrder4();
     }
 
-    //void checkButtonOrder1()
-    //{
-    //    if (b12 && b5)
-    //    {
-    //        b12pmLit.SetActive(true);
+    void checkButtonOrder1()
+    {
+        if (b12 && b5)
+        {
+            b12pmLit.SetActive(true);
 
-    //    }
-    //    else if (b10 || b2 || b7)
-    //    {
-    //            b5 = false;
-    //            b5pmLit.SetActive(false);
-    //            b12 = false;
-    //            b12pmLit.SetActive(false);
-    //            b10 = false;
-    //        b10pmLit.SetActive(false);
-    //        b2 = false;
-    //        b2pmLit.SetActive(false);
-    //        b7 = false;
-    //        b7pmLit.SetActive(false);
-    //    }
+        }
+        else if (b10 || b2 || b7)
+        {
+                b5 = false;
+                b5pmLit.SetActive(false);
+                b12 = false;
+                b12pmLit.SetActive(false);
+                b10 = false;
+            b10pmLit.SetActive(false);
+            b2 = false;
+            b2pmLit.SetActive(false);
+            b7 = false;
+            b7pmLit.SetActive(false);
+        }
         
-    //}
+    }
 
-    //void checkButtonOrder2()
-    //{
-    //    if (b12 && b5 && b10)
-    //    {
-    //        b10pmLit.SetActive(true);
-    //    }
-    //    else if(b2 || b7)
-    //    {
-    //        b5 = false;
-    //        b5pmLit.SetActive(false);
-    //        b12 = false;
-    //        b12pmLit.SetActive(false);
-    //        b10 = false;
-    //        b10pmLit.SetActive(false);
-    //        b2 = false;
-    //        b2pmLit.SetActive(false);
-    //        b7 = false;
-    //        b7pmLit.SetActive(false);
-    //    }
-    //}
+    void checkButtonOrder2()
+    {
+        if (b12 && b5 && b10)
+        {
+            b10pmLit.SetActive(true);
+        }
+        else if(b2 || b7)
+        {
+            b5 = false;
+            b5pmLit.SetActive(false);
+            b12 = false;
+            b12pmLit.SetActive(false);
+            b10 = false;
+            b10pmLit.SetActive(false);
+            b2 = false;
+            b2pmLit.SetActive(false);
+            b7 = false;
+            b7pmLit.SetActive(false);
+        }
+    }
 
-    //void checkButtonOrder3()
-    //{
-    //    if (b12 && b5 && b10 && b2)
-    //    {
-    //        b2pmLit.SetActive(true);
-    //    }
-    //    else if (b7)
-    //    {
-    //        b5 = false;
-    //        b5pmLit.SetActive(false);
-    //        b12 = false;
-    //        b12pmLit.SetActive(false);
-    //        b10 = false;
-    //        b10pmLit.SetActive(false);
-    //        b2 = false;
-    //        b2pmLit.SetActive(false);
-    //        b7 = false;
-    //        b7pmLit.SetActive(false);
+    void checkButtonOrder3()
+    {
+        if (b12 && b5 && b10 && b2)
+        {
+            b2pmLit.SetActive(true);
+        }
+        else if (b7)
+        {
+            b5 = false;
+            b5pmLit.SetActive(false);
+            b12 = false;
+            b12pmLit.SetActive(false);
+            b10 = false;
+            b10pmLit.SetActive(false);
+            b2 = false;
+            b2pmLit.SetActive(false);
+            b7 = false;
+            b7pmLit.SetActive(false);
 
-    //    }
-    //}
+        }
+    }
 
-    //void checkButtonOrder4()
-    //{
-    //    if (b12 && b5 && b10 && b2 && b7)
-    //    {
-    //        b7pmLit.SetActive(true);
-    //        // !!!!!!!!! HIDE BACK BUTTON TO LIT TOWER !!!!!!!!!!
-    //        backToUnlit.SetActive(false);
-    //        backBtn.SetActive(true);
-    //    }
-    //    else
-    //    {
-    //        b5 = false;
-    //        b5pmLit.SetActive(false);
-    //        b12 = false;
-    //        b12pmLit.SetActive(false);
-    //        b10 = false;
-    //        b10pmLit.SetActive(false);
-    //        b2 = false;
-    //        b2pmLit.SetActive(false);
-    //        b7 = false;
-    //        b7pmLit.SetActive(false);
-    //    }
-    //}
+    void checkButtonOrder4()
+    {
+        if (b12 && b5 && b10 && b2 && b7)
+        {
+            b7pmLit.SetActive(true);
+            // !!!!!!!!! HIDE BACK BUTTON TO UNLIT TOWER !!!!!!!!!!
+            backToUnlit.SetActive(false);
+            backBtn.SetActive(true);
+        }
+        else
+        {
+            b5 = false;
+            b5pmLit.SetActive(false);
+            b12 = false;
+            b12pmLit.SetActive(false);
+            b10 = false;
+            b10pmLit.SetActive(false);
+            b2 = false;
+            b2pmLit.SetActive(false);
+            b7 = false;
+           b7pmLit.SetActive(false);
+        }
+    }
 
 }

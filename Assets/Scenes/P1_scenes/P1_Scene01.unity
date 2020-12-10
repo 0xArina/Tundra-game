@@ -993,15 +993,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1. Try to find something to sweep out the snow
+  m_text: '1. you need to sweep out the snow to see the 1st puzzle
 
 
-    2. Don''t forget
-    that you have a book with hints
+    2. Don''t
+    forget that you have a book with hints
 
 
-    3. Communicate with your team member to
-    solve the quiz faster'
+    3. Communicate with your team member
+    to solve the quiz faster'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3df1dd2eced1b524db023e7c5be6af76, type: 2}
   m_sharedMaterial: {fileID: -5504433677728275962, guid: 3df1dd2eced1b524db023e7c5be6af76, type: 2}
@@ -6289,7 +6289,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is your inventory
+  m_text: ' your inventory'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3df1dd2eced1b524db023e7c5be6af76, type: 2}
   m_sharedMaterial: {fileID: -5504433677728275962, guid: 3df1dd2eced1b524db023e7c5be6af76, type: 2}
@@ -6323,7 +6323,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
