@@ -8,6 +8,7 @@ public class GreenEnlarge : MonoBehaviour
     public GameObject puzzleBG;
 
 
+
     public void Start()
     {
         //dont show enlarged image
@@ -28,6 +29,7 @@ public class GreenEnlarge : MonoBehaviour
         // OPEN PUZZLE WHEN BELL IS PRESSED
 
         puzzleBG.SetActive(true);
+
 
 
     }

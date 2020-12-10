@@ -6,6 +6,7 @@ public class BellEnlargeImg : MonoBehaviour
 {
     public GameObject imageBell;
     public GameObject puzzleBG;
+    public GameObject BellBG;
   
 
     public void Start()
@@ -28,6 +29,8 @@ public class BellEnlargeImg : MonoBehaviour
         // OPEN PUZZLE WHEN BELL IS PRESSED
 
         puzzleBG.SetActive(true);
+
+        BellBG.SetActive(false);
 
 
     }

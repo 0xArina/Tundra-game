@@ -29,7 +29,6 @@ public class BlueEnlarge : MonoBehaviour
 
         puzzleBG.SetActive(true);
 
-
     }
 
     public void OnMouseExit()
