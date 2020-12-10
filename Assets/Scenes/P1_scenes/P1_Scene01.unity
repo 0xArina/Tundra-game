@@ -1038,10 +1038,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '1. you need to sweep out the snow to see the 1st puzzle
 
-
     2. Don''t
     forget that you have a book with hints
-
 
     3. Communicate with your team member
     to solve the quiz faster'
@@ -1083,7 +1081,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 40
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0

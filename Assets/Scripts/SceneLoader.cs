@@ -61,6 +61,18 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(4);
     }
 
+    public void storyEndP1()
+    {
+        // final scene p1
+        SceneManager.LoadScene(25);
+    }
+
+    public void storyEndP2()
+    {
+        // final scene p2
+        SceneManager.LoadScene(24);
+    }
+
     // EXIT GAME
     public void exitGame()
     {
