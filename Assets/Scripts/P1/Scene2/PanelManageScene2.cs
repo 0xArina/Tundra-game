@@ -66,6 +66,7 @@ public class PanelManageScene2 : MonoBehaviour
     /*********** ON ARROWS  ***********/
     public void onArrowLeft()
     {
+        CluePanel.SetActive(true);
         BellBG.SetActive(false);
 
         //hide colliders 
