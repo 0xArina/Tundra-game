@@ -8,6 +8,7 @@ public class RedEnlarge : MonoBehaviour
     public GameObject puzzleBG;
 
 
+
     public void Start()
     {
         //dont show enlarged image
@@ -21,6 +22,7 @@ public class RedEnlarge : MonoBehaviour
         colourSpike.SetActive(true);
 
         Debug.Log("Ray hit colourSpike");
+
     }
 
     public void OnMouseDown()
@@ -28,6 +30,7 @@ public class RedEnlarge : MonoBehaviour
         // OPEN PUZZLE WHEN BELL IS PRESSED
 
         puzzleBG.SetActive(true);
+
 
 
     }

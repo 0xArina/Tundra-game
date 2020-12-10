@@ -223,7 +223,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -406.6, y: 94.8}
+  m_AnchoredPosition: {x: -406.6, y: 94.79999}
   m_SizeDelta: {x: 813.23193, y: 189.5687}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &612421229
@@ -635,11 +635,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1: "Look around the scene to find hidden objects and puzzles."
+  m_text: '1. Look around the scene to find hidden objects and puzzles.
 
-
-    2:
-    "Try clicking around to see what you find!"'
+    2. Try
+    clicking around to see what you find!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3df1dd2eced1b524db023e7c5be6af76, type: 2}
   m_sharedMaterial: {fileID: -5504433677728275962, guid: 3df1dd2eced1b524db023e7c5be6af76, type: 2}
@@ -678,7 +677,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 30
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
