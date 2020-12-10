@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Collections.Specialized;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 public class Tower_enlarged : MonoBehaviour
 {
@@ -34,11 +30,12 @@ public class Tower_enlarged : MonoBehaviour
         
         puzzleBG.SetActive(true);
         
+
     }
 
     public void OnMouseExit()
     {
+
         imageTower.SetActive(false);
-       
     }
 }

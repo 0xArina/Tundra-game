@@ -1,12 +1,32 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class CheckKeyCollected : MonoBehaviour
 {
 
     public GameObject key;
     public static bool keyActive;
+
+    public GameObject vialBlue;
+    public GameObject vialGreen;
+    public GameObject vialOrange;
+    public GameObject vialPurple;
+    public GameObject vialRed;
+    public GameObject vialYellow;
+
+    public Image background;
+    public Sprite newBackground;
+    public Sprite oldBackground;
+
+    public static bool vialsCollected;
+
+    public GameObject doorPrompt;
+    public GameObject openDoorCollider;
+
+    private void Start()
+    {
+        
+    }
 
     // Update is called once per frame
     void Update()
@@ -18,6 +38,27 @@ public class CheckKeyCollected : MonoBehaviour
         else
         {
             key.SetActive(false);
+        }
+
+        if(vialsCollected == true)
+        {
+            vialBlue.SetActive(true);
+            vialGreen.SetActive(true);
+            vialOrange.SetActive(true);
+            vialPurple.SetActive(true);
+            vialRed.SetActive(true);
+            vialYellow.SetActive(true);
+
+        }
+        else
+        {
+            vialBlue.SetActive(false);
+            vialGreen.SetActive(false);
+            vialOrange.SetActive(false);
+            vialPurple.SetActive(false);
+            vialRed.SetActive(false);
+            vialYellow.SetActive(false);
+
         }
     }
 }
