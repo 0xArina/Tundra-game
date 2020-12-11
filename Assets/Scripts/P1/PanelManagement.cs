@@ -68,7 +68,15 @@ public class PanelManagement : MonoBehaviour
     {
         bgLeft.SetActive(true);
         bgRight.SetActive(false);
-        towerCollider.SetActive(true);
+        if (DropAndClean.BroomUsed)
+        {
+
+            colliderNOSNOW.SetActive(true);
+        }
+        else if (!DropAndClean.BroomUsed)
+        {
+            towerCollider.SetActive(true);
+        }
     }
 
 
