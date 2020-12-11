@@ -9,6 +9,8 @@ public class DropAndClean : MonoBehaviour, IDropHandler
     public GameObject shelf;
     public GameObject collider1;
 
+    public static bool BroomUsed = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +35,8 @@ public class DropAndClean : MonoBehaviour, IDropHandler
            collider1.SetActive(false);
             
             shelf.SetActive(false);
+
+            BroomUsed = true;
         }
     }
 }

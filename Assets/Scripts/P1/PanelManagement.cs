@@ -22,6 +22,10 @@ public class PanelManagement : MonoBehaviour
     /*********** BOOK  ***********/
     public GameObject bookP1;
 
+    /*********** BROOM  ***********/
+    public GameObject broom;
+    public GameObject broomScene;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -110,6 +114,8 @@ public class PanelManagement : MonoBehaviour
         towerCollider.SetActive(false);
         colliderNOSNOW.SetActive(false);
 
+
+
     }
 
     // close book page 1
@@ -124,8 +130,16 @@ public class PanelManagement : MonoBehaviour
         }
         else if (bgLeft.activeInHierarchy)
         {
-            towerCollider.SetActive(true);
-            colliderNOSNOW.SetActive(true);
+
+            if (DropAndClean.BroomUsed)
+            {
+                colliderNOSNOW.SetActive(true);
+            }
+            else if (!DropAndClean.BroomUsed)
+            {
+                towerCollider.SetActive(true);
+            }
+            
         }
 
         
@@ -148,8 +162,24 @@ public class PanelManagement : MonoBehaviour
     {
         questionPanel.SetActive(false);
         // show tower collider
-        towerCollider.SetActive(true);
-        colliderNOSNOW.SetActive(true);
+        if (!bgLeft.activeInHierarchy)
+        {
+            towerCollider.SetActive(false);
+            colliderNOSNOW.SetActive(false);
+        }
+        else if (bgLeft.activeInHierarchy)
+        {
+            if (DropAndClean.BroomUsed)
+            {
+
+                colliderNOSNOW.SetActive(true); 
+            }
+            else if(!DropAndClean.BroomUsed)
+            {
+                towerCollider.SetActive(true);
+            }
+
+        }
     }
 
 }
