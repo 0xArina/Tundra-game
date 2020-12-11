@@ -147,4 +147,9 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(12);
     }
 
+    public void LoadP2_SceneWithSafeAndBooks()
+    {
+        SceneManager.LoadScene(14);
+    }
+
 }

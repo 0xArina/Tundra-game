@@ -65,10 +65,10 @@ public class BellTowerQuiz : MonoBehaviour
         EndPortal.SetActive(false);
 
         /************* HIDE TRIANGLES ***************/
-        redTriang.SetActive(false);
-        greenTriang.SetActive(false);
-        orangeTriang.SetActive(false);
-        blueTriang.SetActive(false);
+        //redTriang.SetActive(false);
+        //greenTriang.SetActive(false);
+        //orangeTriang.SetActive(false);
+        //blueTriang.SetActive(false);
 
         /************* HIDE TRIANGLES ON COLOR PLANES ***************/
         redTriangPanel.SetActive(false);
@@ -357,10 +357,10 @@ public class BellTowerQuiz : MonoBehaviour
 
             //hide all triangles
             /************* HIDE TRIANGLES ***************/
-            redTriang.SetActive(false);
-            greenTriang.SetActive(false);
-            orangeTriang.SetActive(false);
-            blueTriang.SetActive(false);
+            //redTriang.SetActive(false);
+            //greenTriang.SetActive(false);
+            //orangeTriang.SetActive(false);
+            //blueTriang.SetActive(false);
 
             /************* HIDE TRIANGLES ON COLOR PLANES ***************/
             redTriangPanel.SetActive(false);
